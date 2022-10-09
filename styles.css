@@ -1,0 +1,272 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif !important;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'IBM Plex Mono', monospace !important;
+}
+p {
+    margin: 0px !important;
+}
+a {
+    color: #492f7a !important;
+}
+
+.bold {
+    font-weight: 900;
+}
+.btn {
+    width: 20rem;
+    max-width: 100%;
+    align-self: center;
+    font-size: 1.2rem !important;
+}
+.card {
+    margin-bottom: 1rem;
+    /* min-height: 96%; */
+}
+
+
+/* title ----------------------------------------------------------------------------------------------- */
+
+#title {
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+.bg_img {
+    /* bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    background: url('./images/big_sci_logo.jpg') right center / auto 103% no-repeat scroll;
+    min-height: 100vh;
+}
+.polygon {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.polygon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    min-width: 100%;
+    background-color: #140739;
+}
+.polygon .title {
+    max-width: 85%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+.polygon .subtitle {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem auto;
+}
+.rsvp_btn {
+    font-size: 2rem !important;
+}
+.more_info {
+    margin-top: 4rem
+}
+.polygon .polygon-content {
+    position: relative;
+    /* padding: 5rem; */
+}
+.polygon .polygon-content h1 {
+    font-size: 3rem;
+}
+.polygon .polygon-content p {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 700px) {
+    .polygon {
+        width: 75vw;
+        padding-bottom: 0;
+    }
+    .polygon:before {
+        transform: skewX(-25deg);
+        transform-origin: top right;
+    }
+}
+
+@media (min-width: 60em) {
+    .polygon {
+        width: 65vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1160px) {
+    .polygon:before {
+        transform: skewX(-20deg);
+    }
+}
+
+@media (max-width: 1090px) {
+    .polygon .polygon-content h1 {
+        font-size: 2rem;
+    }
+
+    .polygon .title {
+        padding-bottom: 4rem;
+    }
+
+    .polygon .subtitle {
+        max-width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .polygon .subtitle {
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .polygon .title {
+        max-width: 85%;
+        padding-top: 5rem;
+        padding-left: 3rem;
+    }
+    .polygon .subtitle {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 3rem auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .polygon .polygon-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .polygon .title {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 2rem 5rem 2rem;
+    }
+
+    .polygon .subtitle {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4rem;
+    }
+}
+
+.social-icons {
+    position: relative;
+    z-index: 2;
+}
+.social-icons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100rem;
+}
+
+@media (min-width: 35em) {
+    .social-icons {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 2.5rem;
+        width: auto;
+    }
+}
+
+/* student submission categories ------------------------- */
+#submission_cats {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .submission_title {
+        padding-top: 5rem;
+    }
+}
+
+.blue-card {
+    border: 3px solid #0398ca !important;
+    background-color: #f4f4f4 !important;
+}
+.pink-card {
+    border: 3px solid #e01073 !important;
+    background-color: #f4f4f4 !important;
+}
+.purple-card {
+    border: 3px solid #7b3dee !important;
+    background-color: #f4f4f4 !important;
+}
+
+@media (max-width: 768px) {
+    .change-blue {
+        border: 3px solid #0398ca !important;
+    }
+    .change-pink {
+        border: 3px solid #e01073 !important;   
+    }
+    .change-purple {
+        border: 3px solid #7b3dee !important;
+    }
+}
+
+
+/* gallery ------------------------------------------------------------------------------------ */
+
+#submission_gallery {
+    min-height: calc(100vh - 220px);
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-card {
+    width: 5rem !important;
+    min-height: 5rem;
+}
+
+@media (max-width: 700px) {
+    .gallery_title {
+        padding-top: 0px;
+    }
+}
+
+/* footer -------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #140739;
+    color: #f4f4f4;
+}
+
+#countdown {
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: #f4f4f4;
+}
