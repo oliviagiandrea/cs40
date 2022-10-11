@@ -11,11 +11,15 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: 'IBM Plex Mono', monospace !important;
 }
+h2 {
+    font-size: 1.5rem !important;
+}
 p {
     margin: 0px !important;
+    font-size: 1.2rem !important;
 }
 a {
-    color: #492f7a !important;
+    color: #0398ca !important;
 }
 
 .bold {
@@ -38,6 +42,7 @@ a {
 #title {
     min-height: 100vh;
     overflow-y: hidden;
+    background-color: #140739;
 }
 .bg_img {
     /* bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
@@ -62,6 +67,16 @@ a {
     min-width: 100%;
     background-color: #140739;
 }
+.polygon .polygon-content {
+    position: relative;
+    /* padding: 5rem; */
+}
+.polygon .polygon-content h1 {
+    font-size: 3rem;
+}
+.polygon .polygon-content p {
+    font-size: 1.2rem;
+}
 .polygon .title {
     max-width: 85%;
     padding-top: 5rem;
@@ -77,17 +92,11 @@ a {
     font-size: 2rem !important;
 }
 .more_info {
-    margin-top: 4rem
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
-.polygon .polygon-content {
-    position: relative;
-    /* padding: 5rem; */
-}
-.polygon .polygon-content h1 {
-    font-size: 3rem;
-}
-.polygon .polygon-content p {
-    font-size: 1.2rem;
+.more_info > a {
+    color: #f4f4f4 !important;
 }
 
 @media (min-width: 700px) {
@@ -107,19 +116,19 @@ a {
     }
 }
 
-@media (min-width: 700px) and (max-width: 1160px) {
+@media (min-width: 700px) and (max-width: 1290px) {
     .polygon:before {
         transform: skewX(-20deg);
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1200px) {
     .polygon .polygon-content h1 {
         font-size: 2rem;
     }
 
     .polygon .title {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     .polygon .subtitle {
@@ -135,17 +144,17 @@ a {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .polygon .title {
         max-width: 85%;
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-left: 3rem;
     }
     .polygon .subtitle {
         max-width: 50%;
         display: flex;
         flex-direction: column;
-        margin: 3rem 3rem auto;
+        margin: auto 3rem auto;
     }
 }
 
@@ -169,6 +178,10 @@ a {
         display: flex;
         flex-direction: column;
         margin: 0 4rem;
+    }
+
+    .more_info {
+        margin-bottom: 1rem !important;
     }
 }
 
@@ -196,7 +209,38 @@ a {
     }
 }
 
-/* student submission categories ------------------------- */
+/* spotlight section ------------------------------------------------- */
+#spotlight {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.id_img {
+    width: 70% !important;
+    margin-bottom: 1rem;
+}
+
+#spotlight a {
+    color: #7b3dee !important;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    .spotlighttitle {
+        margin-top: 4rem !important;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+    .id_img {
+        width: 50% !important;
+    }
+}
+
+/* student submission categories ------------------------------------- */
 #submission_cats {
     min-height: 100vh;
     background-color: #f4f4f4;
