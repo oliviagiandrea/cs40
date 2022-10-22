@@ -1,9 +1,36 @@
-// navbar scrolling ---------------------------------------------------------------------------------
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $(".sticky-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
+// show panelists when btnShowPanelists is clicked, vice versa for btnHide Panelists
+window.onresize = function() {
+    if ($(window).width() < 400) {
+        $('#btnShowPanelists').removeClass('inactive');
+        $('#btnShowPanelists').addClass('active');
+        $('#panelists').removeClass('active');
+        $('#panelists').addClass('inactive');
+    } else {
+        $('#btnShowPanelists').removeClass('active');
+        $('#btnShowPanelists').addClass('inactive');
+        $('#panelists').removeClass('inactive');
+        $('#panelists').addClass('active');
+    }
+};
+$(document).ready(function() {
+    if ($(window).width() < 400) {
+        $('#btnShowPanelists').removeClass('inactive');
+        $('#btnShowPanelists').addClass('active');
+        $('#panelists').removeClass('active');
+        $('#panelists').addClass('inactive');
+    } else {
+        $('#btnShowPanelists').removeClass('active');
+        $('#btnShowPanelists').addClass('inactive');
+        $('#panelists').removeClass('inactive');
+        $('#panelists').addClass('active');
+    }
+});
+
+$('#btnShowPanelists').click(function() {
+    $('#panelists').removeClass('inactive');
+    $('#panelists').addClass('active');
+    $('#btnShowPanelists').removeClass('active');
+    $('#btnShowPanelists').addClass('inactive');
 });
 
 // countdown ----------------------------------------------------------------------------------------
