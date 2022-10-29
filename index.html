@@ -33,36 +33,37 @@
 </head>
 
 <body>
+  <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#title">
+      <img src="./images/logo.png" width="30" height="30" alt="CS40 Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#title">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#spotlight">Spotlight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#agenda">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recognition">Recognition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <section id="title">
     <div class="bg_img">
-      <!-- Vertical navbar -->
-      <!-- <div class="nav-wrapper">
-        <div class="vertical-nav" id="sidebar">
-          <ul class="nav flex-column mb-0">
-            <li class="nav-item">
-              <a href="#title" class="nav-link text-white">
-                RSVP
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#spotlight" class="nav-link text-white">
-                SPOTLIGHT
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#agenda" class="nav-link text-white">
-                AGENDA
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#submit" class="nav-link text-white">
-                CREATIVE<br>SUBMISSIONS
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div> -->
-      <!-- End vertical navbar -->
       <div class="polygon">
         <div class="polygon-content text-white">
           <h1 class="title">Celebrate with us the <span class="bold">40th Anniversary</span> of the Wellesley College Computer Science Department!</h1>
@@ -88,16 +89,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- <div class="social-icons">
-        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-          <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div> -->
-      
+      </div>      
     </div>
   </section>
 
@@ -120,19 +112,19 @@
       </div>
       <div class="row mt-5 mb-4">
         <div class="col-md-3 col-6 justify-content-center mb-5">
-          <img class="id_img" src="./images/hollyyanco.png" alt="Holly Yanco"/><br/>
+          <img class="id_img" src="./images/hollyyanco.png" alt="Photo of Holly Yanco"/><br/>
           <a href="https://www.uml.edu/robotics/faculty/holly-yanco.aspx">Holly Yanco '91</a>
         </div>
         <div class="col-md-3 col-6 justify-content-center mb-5">
-          <img class="id_img" src="./images/audreystjohn.png" alt="Audrey St. John"/><br/>
-          <a href="https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john">Audrey St. John '03</a>
+          <img class="id_img" src="./images/audreystjohn.png" alt="Photo of Audrey St. John"/><br/>
+          <a href="https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john">Audrey St. John '02</a>
         </div>
         <div class="col-md-3 col-6 justify-content-center mb-5">
-          <img class="id_img" src="./images/vasuraman.png" alt="Vasu Raman"/><br/>
+          <img class="id_img" src="./images/vasuraman.png" alt="Photo of Vasu Raman"/><br/>
           <a href="https://vraman.github.io/">Vasu Raman '07</a>
         </div>
         <div class="col-md-3 col-6 justify-content-center mb-5">
-          <img class="id_img" src="./images/kathrynneugent.png" alt="Kathryn Neugent"/><br/>
+          <img class="id_img" src="./images/kathrynneugent.png" alt="Photo of Kathryn Neugent"/><br/>
           <a href="https://kathrynneugent.com/">Kathryn Neugent '10</a>
         </div>
       </div>
@@ -150,19 +142,20 @@
           <tbody>
             <tr>
               <th scope="row">10-10:40am @ Focus</th>
-              <td><p class="event">Light breakfast + Student creative work Expo/Demo</p></td>
+              <td><h3 class="event">Light breakfast + Student creative work Expo/Demo</h3></td>
             </tr>
             <tr>
               <th scope="row">10:45-11am @ H101</th>
               <td>
-                <p class="event">Welcome Remarks</p>
+                <h3 class="event">Welcome Remarks</h3>
                 <p>Presented by <a href="https://www.wellesley.edu/cs/faculty/shaer" target="_blank">Orit Shaer</a></p>
+                <p class="zoomLink">Webinar Zoom link: <a href="https://wellesley.zoom.us/j/97100394762" target="_blank">https://wellesley.zoom.us/j/97100394762</a></p>
               </td>
             </tr>
             <tr>
               <th scope="row">11-12:20pm @ HC101</th>
               <td>
-                <p class="event">Panel: The Past and Present of the CS Department</p>
+                <h3 class="event">Panel: The Past and Present of the CS Department</h3>
                 <p>
                   Part 1: <a href="https://www.wellesley.edu/cs/faculty/metaxas" target="_blank">Takis Metaxas</a>, <a href="https://www.wellesley.edu/cs/faculty/herbst" target="_blank">Jean Herbst</a>, <a href="https://www.wellesley.edu/cs/faculty/turbak" target="_blank">Lyn Turbak</a>.<br />
                   <i>Moderated by Jessica Linker '03</i>
@@ -171,11 +164,15 @@
                   Part 2: <a href="https://www.wellesley.edu/cs/faculty/lee" target="_blank">Sohie Lee</a>, <a href="https://www.wellesley.edu/cs/faculty/mawhorter" target="_blank">Peter Mawhorter</a>, <a href="https://www.wellesley.edu/cs/faculty/jtynes" target="_blank">Jordan Tynes</a>, <a href="https://www.wellesley.edu/cs/faculty/sandu" target="_blank">Smaranda Sandu '14</a>.<br /> 
                   <i>Moderated by Sophia Kobayashi '24</i>
                 </p>
+                <p class="zoomLink">Webinar Zoom link: <a href="https://wellesley.zoom.us/j/97100394762" target="_blank">https://wellesley.zoom.us/j/97100394762</a></p>
               </td>
             </tr>
             <tr>
-              <th scope="row">12:20-1:30pm @ Focus</th>
-              <td><p class="event">Lunch + Student Creative Work Expo/Demo</p></td>
+              <th scope="row">12:20-2pm @ Focus</th>
+              <td>
+                <h3 class="event">Lunch + Student Creative Work Expo/Demo</h3>
+                <p class="zoomLink">Open Zoom meeting link: <a href="https://wellesley.zoom.us/j/93417707242" target="_blank">https://wellesley.zoom.us/j/93417707242</a></p>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -185,194 +182,201 @@
         <table class="table table-bordered">
           <tbody>
             <tr>
-              <th scope="row">1:30-2pm @ Focus</th>
-              <td><p class="event">Reception</p></td>
-            </tr>
-            <tr>
               <th scope="row">2-3pm @ HC101</th>
               <td>
-                <p class="event">"Of Humans and Robots" Distinguished Alumnae Panel</p>
+                <h3 class="event">"Of Humans and Robots" Distinguished Alumnae Panel</h3>
                 <p>
                   <a href="https://www.uml.edu/robotics/faculty/holly-yanco.aspx" target="_blank">Holly Yanco '91</a>, 
-                  <a href="https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john" target="_blank">Audrey St. John '03</a>, 
+                  <a href="https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john" target="_blank">Audrey St. John '02</a>, 
                   <a href="https://vraman.github.io/" target="_blank">Vasu Raman '07</a>, 
                   <a href="https://kathrynneugent.com/" target="_blank">Kathryn Neugent '10</a>.<br />
                   <i>Moderated by <a href="https://www.wellesley.edu/cs/faculty/mustafaraj" target="_blank">Eni Mustafaraj</a></i>
                 </p>
+                <p class="zoomLink">Webinar Zoom link: <a href="https://wellesley.zoom.us/j/98182976914" target="_blank">https://wellesley.zoom.us/j/98182976914</a></p>
               </td>
             </tr>
             <tr>
               <th scope="row">3:10-4:10pm @ H101</th>
               <td>
-                <p class="event">Panel: Advancing Computing Research at Wellesley</p>
+                <h3 class="event">Panel: Advancing Computing Research at Wellesley</h3>
                 <p>
-                  <a href="https://www.wellesley.edu/cs/faculty/canderson" target="_blank">Carolyn Anderson</a>, <a href="https://www.wellesley.edu/cs/faculty/brubach" target="_blank">Brian Brubach</a>, <a href="https://www.wellesley.edu/cs/faculty/delcourt" target="_blank">Catherine Delcourt '09</a>.<br />
+                  <a href="https://www.wellesley.edu/cs/faculty/canderson" target="_blank">Carolyn Anderson</a>, <a href="https://www.wellesley.edu/cs/faculty/brubach" target="_blank">Brian Brubach</a>, <a href="https://www.wellesley.edu/cs/faculty/delcourt" target="_blank">Catherine Delcourt '09</a>, <a href="https://www.wellesley.edu/cs/faculty/bassem" target="_blank">Christine Bassem</a>.<br />
                   <i>Moderated by Jenny Wang '23 & Toshali Goel '23</i>
                 </p>
+                <p class="zoomLink">Webinar Zoom link: <a href="https://wellesley.zoom.us/j/95523031118" target="_blank">https://wellesley.zoom.us/j/95523031118</a></p>
               </td>
             </tr>
             <tr>
               <th scope="row">4:15-4:45pm @ H101</th>
               <td>
-                <p class="event">Our Alums Around the World: Carousel Greetings</p>
+                <h3 class="event">Our Alums Around the World: Carousel Greetings</h3>
                 <p><i>Moderated by <a href="https://www.wellesley.edu/cs/faculty/kakavouli" target="_blank">Stella Kakavouli</a></i></p>
+                <p class="zoomLink">Webinar Zoom link: <a href="https://wellesley.zoom.us/j/94380121421" target="_blank">https://wellesley.zoom.us/j/94380121421</a></p>
               </td>
             </tr>
             <tr>
-              <th scope="row">4:40-5pm @ H101</th>
+              <th scope="row">4:50-5pm @ H101</th>
               <td>
-                <p class="event">Prize Ceremony for Students' Creative Submissions</p>
+                <h3 class="event">Prize Ceremony for Students' Creative Submissions</h3>
                 <p>Judges: Christina Pong '09, Johana Okerlund '14, Christine Lam '22, <a href="https://www.wellesley.edu/cs/faculty/anderson" target="_blank">Scott Anderson</a>.</p>
+                <p class="zoomLink">Open Zoom meeting link: <a href="https://wellesley.zoom.us/j/94380121421" target="_blank">same as above link</a></p>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="recognition">
-        <div class="row justify-content-center">
-          <h1 class="agendaTitle">RECOGNITION</h1>
-          <button type="button" id="btnShowPanelists" class="inactive btn btn-outline">Show Panelist Photos</button>
-          <div id="panelists" class="active row mt-5 justify-content-center">
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/TakisMetaxas.png" alt="Photo of Takis Metaxas" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/metaxas" target="_blank">Takis Metaxas</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JeanHerbst.png" alt="Photo of Jean Herbst" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/herbst" target="_blank">Jean Herbst</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/LynTurbak.png" alt="Photo of Lyn Turbak" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/turbak" target="_blank">Lyn Turbak</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/SohieLee.png" alt="Photo of Sohie Lee" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/lee" target="_blank">Sohie Lee</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/PeterMawhorter.png" alt="Photo of Peter Mawhorter" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/mawhorter" target="_blank">Peter Mawhorter</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JordanTynes.png" alt="Photo of Jordan Tynes" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/jtynes" target="_blank">Jordan Tynes</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/SmarandaSandu.png" alt="Photo of Smaranda Sandu" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/sandu" target="_blank">Smaranda Sandu '14</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JessicaLinker.png" alt="Photo of Jessica Linker" class="panelistImg" />
-              <p><a href="https://cssh.northeastern.edu/faculty/jessica-linker/" target="_blank">Jessica Linker '03</a></p>
-              <i>Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/SofiaKobayashi.png" alt="Photo of Sophia Kobayashi" class="panelistImg" />
-              <p>Sophia Kobayashi '24</p>
-              <i>Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/CarolynAnderson.png" alt="Photo of Carolyn Anderson" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/canderson" target="_blank">Carolyn Anderson</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/BrianBrubach.png" alt="Photo of Brian Brubach" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/brubach" target="_blank">Brian Brubach</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/CatherineDelcourt.png" alt="Photo of Catherine Delcourt" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/delcourt" target="_blank">Catherine Delcourt '09</a></p>
-              <i>Panelist</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JennyWang.png" alt="Photo of Jenny Wang" class="panelistImg" />
-              <p>Jenny Wang '23</p>
-              <i>Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/ToshaliGoel.png" alt="Photo of Toshali Goel" class="panelistImg" />
-              <p>Toshali Goel '23</p>
-              <i>Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/StellaKakavouli.png" alt="Photo of Stella Kakavouli" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/kakavouli" target="_blank">Stella Kakavouli</a></p>
-              <i>Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/ChristinaPong.png" alt="Photo of Christina Pong" class="panelistImg" />
-              <p>Christina Pong '09</p>
-              <i>Judge</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JohanaOkerlund.png" alt="Photo of Johana Okerlund" class="panelistImg" />
-              <p>Johana Okerlund '14</p>
-              <i>Judge</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/ChristineLam.png" alt="Photo of Christine Lam" class="panelistImg" />
-              <p>Christine Lam '22</p>
-              <i>Judge</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/ScottAnderson.png" alt="Photo of Scott Anderson" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/anderson" target="_blank">Scott Anderson</a></p>
-              <i>Judge</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/EniMustafaraj.png" alt="Photo of Eni Mustafaraj" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/mustafaraj" target="_blank">Eni Mustafaraj</a></p>
-              <i>Organizer / Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/OritShaer.png" alt="Photo of Orit Shaer" class="panelistImg" />
-              <p><a href="https://www.wellesley.edu/cs/faculty/shaer" target="_blank">Orit Shaer</a></p>
-              <i>Organizer / Moderator</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/JessiKim.png" alt="Photo of Jessi Kim" class="panelistImg" />
-              <p>Jessi Kim '23</p>
-              <i>Organizer</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/MalindaLu.png" alt="Photo of Malinda Lu" class="panelistImg" />
-              <p>Malinda Lu '26</p>
-              <i>Organizer</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/OliviaGiandrea.png" alt="Photo of Olivia Giandrea" class="panelistImg" />
-              <p>Olivia Giandrea '23</p>
-              <i>Organizer</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/AngelCooper.png" alt="Photo of Angel Cooper" class="panelistImg" />
-              <p>Angel Cooper '22</p>
-              <i>Organizer</i>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 panelistCol">
-              <img src="./images/DawnGravlin.png" alt="Photo of Dawn Gravlin" class="panelistImg" />
-              <p>Dawn Gravlin '11</p>
-              <i>Organizer</i>
-            </div>
+    </div>
+  </section>
+  <section id="recognition">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="agendaTitle">RECOGNITION</h1>
+        <button type="button" id="btnShowPanelists" class="hidden btn btn-outline">Show Panelist Photos</button>
+        <div id="panelists" class="active row mt-5 justify-content-center">
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/TakisMetaxas.png" alt="Photo of Takis Metaxas" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/metaxas" target="_blank">Takis Metaxas</a></p>
+            <i>Panelist</i>
           </div>
-          <!-- <button type="button" id="btnHidePanelists" class="inactive btn btn-outline">Hide Panelist Photos</button> -->
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JeanHerbst.png" alt="Photo of Jean Herbst" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/herbst" target="_blank">Jean Herbst</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/LynTurbak.png" alt="Photo of Lyn Turbak" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/turbak" target="_blank">Lyn Turbak</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/SohieLee.png" alt="Photo of Sohie Lee" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/lee" target="_blank">Sohie Lee</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/PeterMawhorter.png" alt="Photo of Peter Mawhorter" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/mawhorter" target="_blank">Peter Mawhorter</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JordanTynes.png" alt="Photo of Jordan Tynes" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/jtynes" target="_blank">Jordan Tynes</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/SmarandaSandu.png" alt="Photo of Smaranda Sandu" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/sandu" target="_blank">Smaranda Sandu '14</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JessicaLinker.png" alt="Photo of Jessica Linker" class="panelistImg" />
+            <p><a href="https://cssh.northeastern.edu/faculty/jessica-linker/" target="_blank">Jessica Linker '03</a></p>
+            <i>Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/SofiaKobayashi.png" alt="Photo of Sophia Kobayashi" class="panelistImg" />
+            <p>Sophia Kobayashi '24</p>
+            <i>Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/CarolynAnderson.png" alt="Photo of Carolyn Anderson" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/canderson" target="_blank">Carolyn Anderson</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/BrianBrubach.png" alt="Photo of Brian Brubach" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/brubach" target="_blank">Brian Brubach</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/CatherineDelcourt.png" alt="Photo of Catherine Delcourt" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/delcourt" target="_blank">Catherine Delcourt '09</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/ChristineBassem.png" alt="Photo of Christine Bassem" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/bassem" target="_blank">Christine Bassem</a></p>
+            <i>Panelist</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JennyWang.png" alt="Photo of Jenny Wang" class="panelistImg" />
+            <p>Jenny Wang '23</p>
+            <i>Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/ToshaliGoel.png" alt="Photo of Toshali Goel" class="panelistImg" />
+            <p>Toshali Goel '23</p>
+            <i>Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/StellaKakavouli.png" alt="Photo of Stella Kakavouli" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/kakavouli" target="_blank">Stella Kakavouli</a></p>
+            <i>Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/ChristinaPong.png" alt="Photo of Christina Pong" class="panelistImg" />
+            <p>Christina Pong '09</p>
+            <i>Judge</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JohanaOkerlund.png" alt="Photo of Johana Okerlund" class="panelistImg" />
+            <p>Johana Okerlund '14</p>
+            <i>Judge</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/ChristineLam.png" alt="Photo of Christine Lam" class="panelistImg" />
+            <p>Christine Lam '22</p>
+            <i>Judge</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/ScottAnderson.png" alt="Photo of Scott Anderson" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/anderson" target="_blank">Scott Anderson</a></p>
+            <i>Judge</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/EniMustafaraj.png" alt="Photo of Eni Mustafaraj" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/mustafaraj" target="_blank">Eni Mustafaraj</a></p>
+            <i>Organizer / Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/OritShaer.png" alt="Photo of Orit Shaer" class="panelistImg" />
+            <p><a href="https://www.wellesley.edu/cs/faculty/shaer" target="_blank">Orit Shaer</a></p>
+            <i>Organizer / Moderator</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/JessiKim.png" alt="Photo of Jessi Kim" class="panelistImg" />
+            <p>Jessi Kim '23</p>
+            <i>Organizer</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/MalindaLu.png" alt="Photo of Malinda Lu" class="panelistImg" />
+            <p>Malinda Lu '26</p>
+            <i>Organizer</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/OliviaGiandrea.png" alt="Photo of Olivia Giandrea" class="panelistImg" />
+            <p>Olivia Giandrea '23</p>
+            <i>Organizer</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/AngelCooper.png" alt="Photo of Angel Cooper" class="panelistImg" />
+            <p>Angel Cooper '22</p>
+            <i>Organizer</i>
+          </div>
+          <div class="col-md-2 col-sm-3 col-6 panelistCol">
+            <img src="./images/DawnGravlin.png" alt="Photo of Dawn Gravlin" class="panelistImg" />
+            <p>Dawn Gravlin '11</p>
+            <i>Organizer</i>
+          </div>
         </div>
+        <!-- <button type="button" id="btnHidePanelists" class="inactive btn btn-outline">Hide Panelist Photos</button> -->
       </div>
     </div>
   </section>
 
   <section id="submit">
     <div class="container">
-      <h1 class="submission_title pb-3">STUDENTS' CREATIVE SUBMISSIONS</h1>
+      <h1 class="agendaTitle pb-3">STUDENTS' CREATIVE SUBMISSIONS</h1>
       <div class="row pb-4">
         <div class="col-lg-2 col-md-1 col-sm-0"></div>
         <div class="col-lg-8 col-md-10 col-sm-12 justify-content-center">
@@ -478,28 +482,205 @@
   </section>
 
   <section id="gallery">
-    <div class="container">
-      <h1 class="submission_title gallery_title pb-2">SUBMISSIONS GALLERY</h1>
-      <div class="row mb-4">
-        <div class="col-lg-2 col-md-1 col-sm-0"></div>
-        <div class="col-lg-8 col-md-10 col-sm-12 justify-content-center">
-          <p style="font-size: 1.2rem;">
-            Coming soon... A showcase of students' submissions!
-          </p>
+    <div class="container pb-5">
+      <h1 class="agendaTitle pb-2">SUBMISSIONS GALLERY</h1>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex blue-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Alien on a Train</h2>
+              <p class="card-text">Rik Sampson '23, Jeeyeon Barnes '23</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-2 col-md-1 col-sm-0"></div>
-      </div>
-      <div class="row">
-        <div class="col-12 justify-content-center">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScotkHOoInJthFHjlDVncuMDkAvyG6RjTuHRcq3NfO6HifTHQ/viewform?usp=sf_link" target="_blank">
-            <button type="button" class="btn btn-outline-dark">Submit Your Project</button>
-          </a>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Coco-Land</h2>
+              <p class="card-text">Mattison Lyons '23, Angela Mgbeke '23</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <a href="./projects/csEarrings.jpg" target="_blank">
+              <img src="./projects/csEarrings.jpg" class="card-img-top" alt="CS Earrings">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">CS Earrings</h2>
+              <p class="card-text">Sandy Zheng '25, Rachelle Hu '25, Anjali Karki '25, Indira Ruslanova '25</p>
+              <a href="./projects/csEarrings.jpg" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row mb-1 mt-5 justify-content-center">
-        <div class="card blue-card gallery-card"></div>
-        <div class="card purple-card gallery-card mx-5"></div>
-        <div class="card pink-card gallery-card"></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <a href="https://drive.google.com/drive/folders/1jIZZTQkGlwXTo1EbTd7o3sYOeIuhO92O?usp=sharing" target="_blank">
+              <img src="./projects/csMemes.png" class="card-img-top" alt="CS Memes">
+            </a>  
+            <div class="card-body">
+              <h2 class="card-title">CS Memes</h2>
+              <p class="card-text">Cheryl Wang '23</p>
+              <a href="https://drive.google.com/drive/folders/1jIZZTQkGlwXTo1EbTd7o3sYOeIuhO92O?usp=sharing" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex blue-card">
+            <a href="./projects/cs40Sticker.png" target="_blank">
+              <img src="./projects/cs40Sticker.png" class="card-img-top" alt="CS40 Sticker">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">CS40 Sticker</h2>
+              <p class="card-text">Miriam Roberts '24</p>
+              <a href="./projects/cs40Sticker.png" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <a href="https://drive.google.com/drive/folders/1CeYux48W7fYoP7wwV98zj_U1x47mqhGY?usp=sharing" target="_blank">
+              <img src="./projects/iDreamOfClouds.png" class="card-img-top" alt="I Dream of Clouds">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">I Dream of Clouds</h2>
+              <p class="card-text">Darcy Kim '24</p>
+              <a href="https://drive.google.com/drive/folders/1CeYux48W7fYoP7wwV98zj_U1x47mqhGY?usp=sharing" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <a href="./projects/inputsOutputs.jpg" target="_blank">
+              <img src="./projects/inputsOutputs.jpg" class="card-img-top" alt="InputsOutputs">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">Inputs and Outputs</h2>
+              <p class="card-text">Amy Zhang '24</p>
+              <a href="./projects/inputsOutputs.jpg" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Into the Woods</h2>
+              <p class="card-text">Kate MacVicar '23, Ji Yoon Ahn '23</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex blue-card">
+            <a href="./projects/ioexception.pdf" target="_blank">
+              <img src="./projects/ioexception.png" class="card-img-top" alt="IOException Comic">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">IOException</h2>
+              <p class="card-text">Jennifer Long '25</p>
+              <a href="./projects/ioexception.pdf" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex blue-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Panda Time</h2>
+              <p class="card-text">Leanne Shen '23, Ivy Ho '22</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <a href="./projects/povCsStudent.jpeg" target="_blank">
+              <img src="./projects/povCsStudentThumbnail.jpeg" class="card-img-top" alt="POV: You're a CS Student">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">POV: You are a CS Student</h2>
+              <p class="card-text">Gal Guillermo '25</p>
+              <a href="./projects/povCsStudent.jpeg" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <a href="http://wellesleycs.emilyhou.net/" target="_blank">
+              <img src="./projects/soCloseYetSoFar.png" class="card-img-top" alt="So Close, yet so Far">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">So Close, yet so Far</h2>
+              <p class="card-text">Emily Hou '26</p>
+              <a href="http://wellesleycs.emilyhou.net/" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Space House</h2>
+              <p class="card-text">Emma Lim '24, Julie Lely '23</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex blue-card">
+            <img src="./projects/gameDev.png" class="card-img-top" alt="Game Development Project">
+            <div class="card-body">
+              <h2 class="card-title">Studying Shapes</h2>
+              <p class="card-text">Anabelle Mandel '24, Rik Sampson '23</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <a href="https://drive.google.com/file/d/1O0_sWezXF29N8MpV6F0_KJDUIXTBv4zA/view?usp=share_link" target="_blank">
+              <img src="./projects/theAlumnaeNetwork.jpg" class="card-img-top" alt="The Alumnae Network">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">The Alumnae Network</h2>
+              <p class="card-text">Linh Dinh '26</p>
+              <a href="https://drive.google.com/file/d/1O0_sWezXF29N8MpV6F0_KJDUIXTBv4zA/view?usp=share_link" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex purple-card">
+            <a href="./projects/uninformedConsent.jpg" target="_blank">
+              <img src="./projects/uninformedConsentThumbnail.jpg" class="card-img-top" alt="Uninformed Consent">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">Uninformed Consent</h2>
+              <p class="card-text">Campbell Lund '23</p>
+              <a href="./projects/uninformedConsent.jpg" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-10 d-flex align-items-stretch">
+          <div class="card projCard d-flex pink-card">
+            <a href="./projects/womenInStem.png" target="_blank">
+              <img src="./projects/womenInStem.png" class="card-img-top" alt="Wellesley Women in STEM">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">Wellesley Women in STEM</h2>
+              <p class="card-text">Osani Wright '25</p>
+              <a href="./projects/womenInStem.png" target="_blank" class="btn btn-outline-dark">View Project</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -507,8 +688,8 @@
   <footer>
     <div class="container">
       <div class="row text-center countdownrow pt-5 pb-3">
-        <h4>Let the countdown begin!</h4>
-        <h5 id="countdown"></h5>
+        <h1>Let the countdown begin!</h1>
+        <h2 id="countdown"></h2>
       </div>
       <div class="row pb-5">
         <div class="col-12 text-center">

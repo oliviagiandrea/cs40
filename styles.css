@@ -7,6 +7,7 @@ body {
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #f4f4f4 !important;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'IBM Plex Mono', monospace !important;
@@ -19,7 +20,7 @@ p {
     font-size: 1.2rem !important;
 }
 a {
-    color: #0398ca !important;
+    color: #005f7f !important;
 }
 
 .bold {
@@ -36,6 +37,49 @@ a {
     /* min-height: 96%; */
 }
 
+/* navbar ---------------------------------------------------------------------------------------------- */
+.navbar {
+    background-color: #140739;
+    opacity: 0;
+    transition: opacity 0.4s, height 1s ease-out;
+}
+
+.navbar.activated {
+    opacity: 1;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-right: 1em;
+}
+
+.nav-item {
+    display: inline-block !important;
+}
+
+.nav-item > a {
+    color: white !important;
+}
+
+.nav-link {
+    font-size: 1.1rem !important;
+    float: right;
+}
+
+.nav-link.active::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;
+}
+
+.navbar-toggler {
+    margin-right: 2rem;
+}
 
 /* title ----------------------------------------------------------------------------------------------- */
 
@@ -185,96 +229,9 @@ a {
     }
 }
 
-/* vertical navbar --------------------------------------------------------- */
-.nav-wrapper {
-    min-width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: left;
-    position: fixed;
-    z-index: 3;
-}
-
-.vertical-nav {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    transition: all 0.4s;
-    z-index: 50;
-    font-size: 1.3rem !important;
-}
-
-.vertical-nav ul {
-    margin-bottom: 1rem !important;
-    margin-right: 1rem !important;
-} 
-
-.nav-link {
-    text-align: left;
-    padding: 0.1rem 0rem 0.1rem 3rem !important;
-}
-
-.nav-link i {
-    margin-right: 0.4rem;
-}
-
-/* for toggle behavior */
-
-#sidebar.active {
-    margin-left: -17rem;
-}
-
-#content.active {
-    width: 100%;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -17rem;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #content {
-        width: 100%;
-        margin: 0;
-    }
-    #content.active {
-        margin-left: 17rem;
-        width: calc(100% - 17rem);
-    }
-}
-
-.social-icons {
-    position: relative;
-    z-index: 2;
-}
-.social-icons .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100rem;
-}
-
-@media (min-width: 35em) {
-    .social-icons {
-        position: absolute;
-        height: 100%;
-        top: 0;
-        right: 2.5rem;
-        width: auto;
-    }
-}
-
 /* spotlight section ------------------------------------------------- */
 #spotlight {
     min-height: 100vh;
-    background-color: #f4f4f4;
     text-align: center;
     display: flex;
     align-items: center;
@@ -305,7 +262,6 @@ a {
 /* agenda ------------------------------------------------------------ */
 #agenda {
     min-height: 100vh;
-    background-color: #f4f4f4;
     text-align: center;
     display: flex;
     align-items: center;
@@ -317,8 +273,20 @@ a {
     }
 }
 
-#agenda a {
+.agendaTitle {
+    margin-top: 5rem !important;
+}
+
+.table a {
     color: #000 !important;
+}
+
+.zoomLink {
+    margin-top: 1rem !important;
+}
+
+.zoomLink a {
+    color: #005f7f !important;
 }
 
 @media (min-width: 700px) {
@@ -348,8 +316,9 @@ a {
 }
 
 .event {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     font-weight: 800;
+    font-family: 'Alegreya Sans', sans-serif !important;
 }
 
 .panelistCol {
@@ -363,7 +332,6 @@ a {
 
 @media (max-width: 700px) {
     .agendaTitle {
-        margin-top: 4rem !important;
         text-align: center;
     }
 
@@ -385,26 +353,35 @@ a {
 }
 
 /* recognition ------------------------------------------------------- */
-.recognition {
-    margin-top: 3rem;
+
+#recognition {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#recognition a {
+    color: black !important;
 }
 
 #btnShowPanelists,
 #btnHidePanelists {
     margin-top: 2rem;
     max-width: 80%;
+    border: #000 1px solid;
 }
 
-#btnShowPanelists .active,
-#btnHidePanelists .active {
+#btnShowPanelists .shown,
+#btnHidePanelists .shown {
     display: block !important;
 }
 
-#panelists .active {
+#panelists .shown {
     display: flex !important;
 }
 
-.inactive {
+.hidden {
     display: none !important;
 }
 
@@ -412,16 +389,9 @@ a {
 /* student submission categories ------------------------------------- */
 #submit {
     min-height: 100vh;
-    background-color: #f4f4f4;
     text-align: center;
     display: flex;
     align-items: center;
-}
-
-@media (max-width: 1200px) {
-    .submission_title {
-        padding-top: 5rem;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -460,21 +430,33 @@ a {
 
 #gallery {
     min-height: calc(100vh - 220px);
-    background-color: #f4f4f4;
     text-align: center;
     display: flex;
     align-items: center;
 }
 
-.gallery-card {
-    width: 5rem !important;
-    min-height: 5rem;
+.card-title {
+    font-weight: 600;
 }
 
-@media (max-width: 700px) {
-    .gallery_title {
-        padding-top: 0px;
-    }
+.projCard > .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projCard > .card-body > .card-text, 
+.projCard > .card-body > a {
+    margin-top: 1rem !important;
+}
+
+.projCard > .card-body > a {
+    color: black !important;
+}
+
+.projCard > .card-body > a:hover, 
+.projCard > .card-body > a:active {
+    color: white !important;
 }
 
 /* footer -------------------------------------------------------------------------------------- */

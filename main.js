@@ -1,36 +1,69 @@
 // show panelists when btnShowPanelists is clicked, vice versa for btnHide Panelists
-window.onresize = function() {
-    if ($(window).width() < 400) {
-        $('#btnShowPanelists').removeClass('inactive');
-        $('#btnShowPanelists').addClass('active');
-        $('#panelists').removeClass('active');
-        $('#panelists').addClass('inactive');
-    } else {
-        $('#btnShowPanelists').removeClass('active');
-        $('#btnShowPanelists').addClass('inactive');
-        $('#panelists').removeClass('inactive');
-        $('#panelists').addClass('active');
-    }
-};
 $(document).ready(function() {
     if ($(window).width() < 400) {
-        $('#btnShowPanelists').removeClass('inactive');
-        $('#btnShowPanelists').addClass('active');
-        $('#panelists').removeClass('active');
-        $('#panelists').addClass('inactive');
+        $('#btnShowPanelists').removeClass('hidden');
+        $('#btnShowPanelists').addClass('shown');
+        $('#panelists').removeClass('shown');
+        $('#panelists').addClass('hidden');
     } else {
-        $('#btnShowPanelists').removeClass('active');
-        $('#btnShowPanelists').addClass('inactive');
-        $('#panelists').removeClass('inactive');
-        $('#panelists').addClass('active');
+        $('#btnShowPanelists').removeClass('shown');
+        $('#btnShowPanelists').addClass('hidden');
+        $('#panelists').removeClass('hidden');
+        $('#panelists').addClass('shown');
+    }
+
+    var currentPos = $(window).scrollTop();
+    if (currentPos > 400) {
+        $('#nav').addClass('activated');
+    } else {
+        $('#nav').removeClass('activated');
     }
 });
 
+window.onresize = function() {
+    if ($(window).width() < 400) {
+        $('#btnShowPanelists').removeClass('hidden');
+        $('#btnShowPanelists').addClass('shown');
+        $('#panelists').removeClass('shown');
+        $('#panelists').addClass('hidden');
+    } else {
+        $('#btnShowPanelists').removeClass('shown');
+        $('#btnShowPanelists').addClass('hidden');
+        $('#panelists').removeClass('hidden');
+        $('#panelists').addClass('shown');
+    }
+};
+
 $('#btnShowPanelists').click(function() {
-    $('#panelists').removeClass('inactive');
-    $('#panelists').addClass('active');
-    $('#btnShowPanelists').removeClass('active');
-    $('#btnShowPanelists').addClass('inactive');
+    $('#panelists').removeClass('hidden');
+    $('#panelists').addClass('shown');
+    $('#btnShowPanelists').removeClass('shown');
+    $('#btnShowPanelists').addClass('hidden');
+});
+
+$(window).scroll(function() {
+    // When the user scrolls down 20px from the top of the document, show navbar
+    var currentPos = $(window).scrollTop();
+    if (currentPos > 400) {
+        $('#nav').addClass('activated');
+    } else {
+        $('#nav').removeClass('activated');
+    }
+
+    $('.nav-link').each(function() {
+        var sectionLink = $(this);
+        // capture the height of the navbar
+        var navHeight = $('#nav').outerHeight() + 1;
+        var section = $(sectionLink.attr('href'));
+
+        // subtract the navbar height from the top of the section
+        if (section.position().top - navHeight <= currentPos && sectionLink.offset().top + section.height() > currentPos) {
+            $('.nav-link').removeClass('active');
+            sectionLink.addClass('active');
+        } else {
+            sectionLink.removeClass('active');
+        }
+    });
 });
 
 // countdown ----------------------------------------------------------------------------------------
